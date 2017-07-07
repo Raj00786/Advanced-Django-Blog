@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^logout/$',logout_view,name="logout"),
     url(r'^register/$',register_view,name="register"),
     url(r'^forgot/$',forgot_view,name="forgot"),
+    url(r'^api/', include('api.urls')),
     url(r'^',include('blogs.urls')),
 ]
 
